@@ -1,5 +1,5 @@
 /*global $, QUnit */
-
+QUnit.module('JQuery Deferred');
 // Promise chaining - have 2 functions that return promise, and want to execute the second one after the first one finish
 QUnit.test("Promise chaining", function (assert) {
 	'use strict';
@@ -106,7 +106,7 @@ QUnit.test("jQuery when: result for each promise is submited to done callback", 
 QUnit.test("jQuery when: if any promise in list fail, failed callback is called", function (assert) {
 	'use strict';
 	var done = assert.async();
-	assert.expect(2);
+	//assert.expect(2);
 
 	var d1 = $.Deferred();
 	var d2 = $.Deferred();
