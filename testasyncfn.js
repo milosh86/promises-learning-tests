@@ -27,7 +27,7 @@ function pAsyncFn(n) {
 				reject('operation failed');
 			}
 			if (n === 20) {
-				throw new Error('async operation throws error');
+				throw new Error('async operation throws error'); // could not be catched in then or catch. Use reject instead.
 			}
 			resolve(n);
 		}, 100);
